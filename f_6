@@ -1,0 +1,19 @@
+# function to get the number of uppercase & lower case letters in entered string
+
+def letter_case(s):                                        
+    upper = 0                                              
+    lower = 0                                              
+    for i in s:                                            
+        if i.isupper():                                    
+            upper += 1                                     
+        elif i.islower():                                  
+            lower += 1                                     
+        else:                                              
+            pass                                           
+    return upper, lower                                    
+                                                           
+                                                           
+string = input("enter the string of which you want count") 
+count = letter_case(string)                                
+print("The upper case letters are:", count[0],             
+      "\nThe lower case letters are:", count[1])           
