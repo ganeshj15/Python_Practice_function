@@ -1,0 +1,13 @@
+# Function to collect & store all the even numbers from the entered list.
+
+
+def even_num(l):
+    nl = []
+    for i in l:
+        if i % 2 == 0:
+            nl.append(i)
+    return nl
+    
+num_list = eval(input("enter the list of numbers"))
+new_list_even = even_num(num_list) 
+print("The even numbers in the entered list are:", new_list_even)
