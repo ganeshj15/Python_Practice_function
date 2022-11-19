@@ -1,0 +1,35 @@
+# program for a calculator using functions
+
+def add(a, b):
+    return a + b
+
+def subtract (a, b):
+    return a-b
+
+def multiply (a, b):
+    return a * b
+
+def divide (a, b):
+    return a/b
+print("Following operations can be done")
+print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division")
+while True:
+    choice = int(input("Enter your choice amongst 1,2,3,4:"))
+    if choice in (1,2,3,4):
+        num_1 = float(input("Enter first number"))
+        num_2 = float(input("Enter second number"))
+        if choice == 1:
+            print(num_1, '+' , num_2, '=',add(num_1,num_2)
+        elif choice == 2:
+            print(num_1, '-', num_2, '=', subtract(num_1,num_2))
+        elif choice == 3:
+            print(num_1, '*', num_2, '=', multiply(num_1, num_2))
+        elif choice == 4:
+            print(num_1, '/', num_2, '=', divide(num_1, num_2))
+
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        print("===========================================================") # this is is just used to seperate the two iterations during run time
+        if next_calculation == 'no':
+            break
+    else:
+        print("entered wrong choice")
