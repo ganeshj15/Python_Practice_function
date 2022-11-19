@@ -1,0 +1,11 @@
+# function to test given string palindrome or not
+
+
+def check_palindrome(s):                                   
+    new_str = s[::-1]                          
+    if s == new_str:                           
+        print(s,"is palindrome")               
+    else:                                      
+        print(s," is not palindrome")  
+        
+check_palindrome("akash")                                  
