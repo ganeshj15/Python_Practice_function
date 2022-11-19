@@ -1,0 +1,14 @@
+Function to create & print the list where the values are square of numbers in a given range 
+
+
+def squares(min,max):                                     
+    l = []                                                
+    for i in range(min,max+1):                            
+        l.append(i*i)                                     
+    #print('The squares of 1 to 30 are:',l)               
+    return l                                              
+                                                          
+                                                          
+min = int(input("enter the min number of range"))         
+max = int(input("enter the max number of range"))         
+print(squares(min,max))                                   
