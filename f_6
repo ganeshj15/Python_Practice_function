@@ -8,7 +8,7 @@ def letter_case(s):
             upper += 1                                     
         elif i.islower():                                  
             lower += 1                                     
-        else:                                              
+        else:   # used for any special characters in string                                           
             pass                                           
     return upper, lower                                    
                                                            
