@@ -1,0 +1,10 @@
+# Programme to find the product of numbers using function
+
+def product(*numb):  # * arg is given so that multiple arguments may be given
+    prod = 1
+    for i in numb:
+        prod *= i
+    return prod
+
+num_product = product(10,34,10,2)
+print('product is:', num_product)
