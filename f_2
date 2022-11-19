@@ -1,0 +1,9 @@
+# Function to reverse a string
+
+def reverse_words(s):
+    words = s.split('.')[::-1]
+    new_str = ".".join(words)
+    return new_str
+    
+str_rev = reverse_words('i.like.this.program.very.much') 
+print("Reveresed String is:", str_rev)
